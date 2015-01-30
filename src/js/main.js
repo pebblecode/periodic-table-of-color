@@ -12,7 +12,7 @@ for (var i = colorData.length - 1; i >= 0; i--) {
       lightness = colorData[ i ].l;
   var textColor, boldness;
 
-  if ( lightness > 0.4 ) {
+  if ( lightness >= 0.41 ) {
     textColor = 'dark';
   } else {
     textColor = 'light';
@@ -41,4 +41,12 @@ colorList.isotope({
   }
 })
 
-colorList.isotope({sortby: ['hue','saturation','lightness']});
+colorList.isotope({sortby: ['name']});
+
+$( '.option-btn' ).click( function () {
+  var sortByValue = $( this ).attr( 'data-sort-by' );
+  colorList.isotope({ sortBy: sortByValue });
+
+  $( '.active' ).removeClass( 'active' );
+  $( this ).addClass( 'active' );
+})

@@ -12,7 +12,8 @@
 //===============================================================================
 $ink:    hsl( 220, 20, 20 );
 $paper:  white;
-
+$options: hsl( 240, 12, 20 );
+$options-height: 16vh;
 
 //===============================================================================
 // BASCIS
@@ -46,8 +47,49 @@ body {
   // overflow: hidden;
 }
 
+.options-container {
+  background-color: $options;
+  height: $options-height;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 9999;
+  padding-left: 1vw;
+}
+
+.option-btn {
+  appearance: none;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
+  border: 0;
+  color: mix( white, $options, 10 );
+  font-weight: 900;
+  outline: 0;
+  font-size: 5vw;
+  line-height: $options-height - 1vh;
+  transition: color .5s;
+
+  &::after {
+    content: ",";
+  }
+
+  &:last-child::after {
+    content: "";
+  }
+
+  &:hover {
+    color: mix( white, $options, 30 );
+  }
+
+  &.active {
+    color: white;
+  }
+}
+
 .color-list {
-  margin: 0;
+  margin: $options-height 0 0;
   padding: 0;
   overflow: hidden;
 }
@@ -59,7 +101,7 @@ body {
   padding: 1vw;
 
   &.light {
-    color: white;
+    color: hsl( 220, 10, 95 );
   }
 }
 
