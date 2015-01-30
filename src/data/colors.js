@@ -671,7 +671,7 @@ var colorData = [
         "b": "255"
     },
     {
-        "name": "Goldenrod Yellow",
+        "name": "Light Goldenrod Yellow",
         "hex": "#fafad2",
         "h": "60",
         "s": "0.8000000000000002",

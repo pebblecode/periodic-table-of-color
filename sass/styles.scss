@@ -10,8 +10,8 @@
 //===============================================================================
 // VARIABLES
 //===============================================================================
-$ink:    hsl( 220, 20, 10 );
-$paper:  $ink;
+$ink:    hsl( 220, 20, 20 );
+$paper:  white;
 
 
 //===============================================================================
@@ -42,60 +42,118 @@ body {
 //===============================================================================
 // STYLES
 //===============================================================================
-.color-list {
-  @include clearfix;
+body {
+  // overflow: hidden;
+}
 
+.color-list {
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-$columns: (100% / 6);
 .color-item {
-  float: left;
-  width: $columns;
-  padding-bottom: $columns;
+  width: 16.666666667%;
+  height: 16.666666667vw;
   cursor: pointer;
-  transition: all .25s;
-  position: relative;
-  box-shadow: inset 0 0 0 .25vw $ink;
-  border-radius: .5vw;
+  padding: 1vw;
 
-  &:hover {
-    transform: scale( 1.1 );
-    z-index: 999;
+  &.light {
+    color: white;
   }
 }
 
-.color-info {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.color-name,
-.color-hex {
+.color-info span {
   display: block;
-  text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  color: $ink;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-}
-
-.color-name {
-  font-size: 2vw;
-  transform: translateY( -120% );
+  line-height: 1;
 }
 
 .color-hex {
   text-transform: uppercase;
-  font-size: 3vw;
-  transform: translateY( -20% )
+  font-size: 3.75vw;
+  font-weight: 700;
 }
 
-.color-hsl {
-  display: none;
+.color-name {
+  font-size: 2.3vw;
+  margin-top: .7vw;
+  font-weight: 400;
+}
+
+.color-red,
+.color-blue,
+.color-green,
+.color-hue,
+.color-saturation,
+.color-lightness {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-weight: 700;
+
+  &::before,
+  &::after {
+    font-weight: 300;
+  }
+}
+
+.color-red,
+.color-blue,
+.color-green {
+  left: 1vw;
+}
+
+.color-red {
+  bottom: 3.6vw;
+
+  &::after {
+    content: ": red";
+  }
+}
+
+.color-green {
+  bottom: 2.3vw;
+
+  &::after {
+    content: ": green";
+  }
+}
+
+.color-blue {
+  bottom: 1vw;
+
+  &::after {
+    content: ": blue";
+  }
+}
+
+.color-hue,
+.color-saturation,
+.color-lightness {
+  right: 1vw;
+}
+
+.color-hue {
+  bottom: 3.6vw;
+
+  &::before {
+    content: "hue: ";
+  }
+}
+
+.color-saturation {
+  bottom: 2.3vw;
+
+  &::before {
+    content: "saturation: ";
+  }
+}
+
+.color-lightness {
+  bottom: 1vw;
+
+  &::before {
+    content: "lightness: ";
+  }
 }
