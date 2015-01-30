@@ -1,37 +1,10 @@
 (function () { 'use strict';
 
-  // var colorList =  $( '#js-color-list' );
-
-  // $.getJSON( "../data/colors.json", function ( data ) {
-
-  //   for( var i = 0; i < data.length; i++ ) {
-  //       var name = data[ i ].name,
-  //           hex = data[ i ].value;
-  //       var color = tinycolor( data[ i ].value ),
-  //           r = color.toRgb().r,
-  //           g = color.toRgb().g,
-  //           b = color.toRgb().b,
-  //           h = color.toHsl().h,
-  //           s = color.toHsl().s,
-  //           l = color.toHsl().l,
-  //           v = color.toHsv().v;
-
-  //     colorList.append(
-  //       "<li class='color' style='background-color:" + hex + "'>" + name + "," + hex + "," + h + "," + s + "," + l + "," + v + "," + r + "," + g + "," + b + "</li>"
-  //     );
-
-  //     // colorList.append(
-  //     //   '<li class="color-item" style="background-color:' + hex + '"> <span class="color-name">' + name + '</span> </li>'
-  //     // );
-  //   }
-  // });
-
-  // // var red = tinycolor( 'red' );
-  // // var h = red.toHsl().h;
+  var colorList = $( '#js-color-list' );
 
 
-  // // console.log( h );
-
-  console.log( colorData );
+  for (var i = colorData.length - 1; i >= 0; i--) {
+    colorList.append( '<li class="color-item" style="background-color:'+colorData[ i ].hex+'"><div class="color-info"><span class="color-name">'+colorData[ i ].name+'</span><span class="color-hex">'+colorData[ i ].hex+'</span></div></li>' );
+  };
 
 }()); // end 'use strict'
