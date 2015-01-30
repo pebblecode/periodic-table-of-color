@@ -30,7 +30,6 @@ for (var i = colorData.length - 1; i >= 0; i--) {
 colorList.isotope({
   itemSelector: '.color-item',
   layoutMode: 'masonry',
-  sortAscending: false,
   // transitionDuration: '5s',
   getSortData: {
     name: ".color-name",
@@ -40,10 +39,10 @@ colorList.isotope({
     red: ".color-red parseInt",
     blue: ".color-blue parseInt",
     green: ".color-green parseInt"
-  }
+  },
+  sortBy: 'name'
 })
 
-colorList.isotope({sortby: ['name']});
 
 $( '.option-btn' ).click( function () {
   var sortByValue = $( this ).attr( 'data-sort-by' );
@@ -55,7 +54,8 @@ $( '.option-btn' ).click( function () {
     colorList.isotope({ sortAscending: false });
   }
 
-
   $( '.active' ).removeClass( 'active' );
   $( this ).addClass( 'active' );
 })
+
+// colorList.isotope({ sortAscending: false });
