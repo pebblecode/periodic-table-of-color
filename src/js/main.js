@@ -12,7 +12,7 @@ for (var i = colorData.length - 1; i >= 0; i--) {
       lightness = colorData[ i ].l;
   var textColor, boldness;
 
-  if ( lightness >= 0.41 ) {
+  if ( lightness >= 0.42 ) {
     textColor = 'dark';
   } else {
     textColor = 'light';
@@ -30,6 +30,8 @@ for (var i = colorData.length - 1; i >= 0; i--) {
 colorList.isotope({
   itemSelector: '.color-item',
   layoutMode: 'masonry',
+  sortAscending: false,
+  // transitionDuration: '5s',
   getSortData: {
     name: ".color-name",
     hue: ".color-hue parseInt",
@@ -46,6 +48,13 @@ colorList.isotope({sortby: ['name']});
 $( '.option-btn' ).click( function () {
   var sortByValue = $( this ).attr( 'data-sort-by' );
   colorList.isotope({ sortBy: sortByValue });
+
+  if ( sortByValue == 'name' ) {
+    colorList.isotope({ sortAscending: true });
+  } else {
+    colorList.isotope({ sortAscending: false });
+  }
+
 
   $( '.active' ).removeClass( 'active' );
   $( this ).addClass( 'active' );

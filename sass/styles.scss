@@ -13,7 +13,7 @@
 $ink:    hsl( 220, 20, 20 );
 $paper:  white;
 $options: hsl( 240, 12, 20 );
-$options-height: 16vh;
+$options-height: 8vw;
 
 //===============================================================================
 // BASCIS
@@ -44,7 +44,19 @@ body {
 // STYLES
 //===============================================================================
 body {
-  // overflow: hidden;
+
+  &::-webkit-scrollbar {
+    width: 0 ;
+    height: 12px;
+  }
+}
+
+
+.logo {
+  width: 6vw;
+  // opacity: .8;
+  // background: white;
+  // height: 5vw;
 }
 
 .options-container {
@@ -68,7 +80,7 @@ body {
   font-weight: 900;
   outline: 0;
   font-size: 5vw;
-  line-height: $options-height - 1vh;
+  line-height: $options-height - .5vw;
   transition: color .5s;
 
   &::after {
@@ -95,13 +107,21 @@ body {
 }
 
 .color-item {
-  width: 16.666666667%;
-  height: 16.666666667vw;
+  width: 14.285714286%;
+  height: 14.285714286vw;
   cursor: pointer;
   padding: 1vw;
+  box-shadow: 0 0 0 rgba( $ink, .8 );
 
   &.light {
     color: hsl( 220, 10, 95 );
+  }
+
+  &:hover {
+    transition: box-shadow .25s, transform .25s;
+    transform: scale( 1.1 );
+    box-shadow: 0 0 0 .6vw rgba( $ink, .9 );
+    z-index: 999;
   }
 }
 
@@ -113,13 +133,13 @@ body {
 
 .color-hex {
   text-transform: uppercase;
-  font-size: 3.75vw;
+  font-size: 3vw;
   font-weight: 700;
 }
 
 .color-name {
-  font-size: 2.3vw;
-  margin-top: .7vw;
+  font-size: 2.2vw;
+  margin-top: .5vw;
   font-weight: 400;
 }
 
@@ -131,7 +151,7 @@ body {
 .color-lightness {
   position: absolute;
   text-transform: uppercase;
-  font-size: 1vw;
+  font-size: .8vw;
   font-weight: 700;
 
   &::before,
@@ -147,7 +167,7 @@ body {
 }
 
 .color-red {
-  bottom: 3.6vw;
+  bottom: 3.2vw;
 
   &::after {
     content: ": red";
@@ -155,7 +175,7 @@ body {
 }
 
 .color-green {
-  bottom: 2.3vw;
+  bottom: 2.1vw;
 
   &::after {
     content: ": green";
@@ -177,7 +197,7 @@ body {
 }
 
 .color-hue {
-  bottom: 3.6vw;
+  bottom: 3.2vw;
 
   &::before {
     content: "hue: ";
@@ -185,7 +205,7 @@ body {
 }
 
 .color-saturation {
-  bottom: 2.3vw;
+  bottom: 2.1vw;
 
   &::before {
     content: "saturation: ";
