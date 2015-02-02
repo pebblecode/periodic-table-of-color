@@ -36,6 +36,3 @@ Icon
 
 # Sass
 .sass-cache
-
-# Don't commit css
-*.css

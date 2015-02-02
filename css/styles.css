@@ -1,0 +1,368 @@
+/* line 5, /Users/mark/repos/colorVis/sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 12, /Users/mark/repos/colorVis/sass/_normalize.scss */
+body {
+  margin: 0; }
+
+/* line 31, /Users/mark/repos/colorVis/sass/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/* line 40, /Users/mark/repos/colorVis/sass/_normalize.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/* line 47, /Users/mark/repos/colorVis/sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 55, /Users/mark/repos/colorVis/sass/_normalize.scss */
+[hidden], template {
+  display: none; }
+
+/* line 63, /Users/mark/repos/colorVis/sass/_normalize.scss */
+a {
+  background: transparent; }
+
+/* line 69, /Users/mark/repos/colorVis/sass/_normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* line 77, /Users/mark/repos/colorVis/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 83, /Users/mark/repos/colorVis/sass/_normalize.scss */
+b, strong {
+  font-weight: bold; }
+
+/* line 88, /Users/mark/repos/colorVis/sass/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 93, /Users/mark/repos/colorVis/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 99, /Users/mark/repos/colorVis/sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 105, /Users/mark/repos/colorVis/sass/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/* line 111, /Users/mark/repos/colorVis/sass/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 118, /Users/mark/repos/colorVis/sass/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 122, /Users/mark/repos/colorVis/sass/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 130, /Users/mark/repos/colorVis/sass/_normalize.scss */
+img {
+  border: 0; }
+
+/* line 135, /Users/mark/repos/colorVis/sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 143, /Users/mark/repos/colorVis/sass/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 148, /Users/mark/repos/colorVis/sass/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 155, /Users/mark/repos/colorVis/sass/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/* line 163, /Users/mark/repos/colorVis/sass/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 182, /Users/mark/repos/colorVis/sass/_normalize.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 189, /Users/mark/repos/colorVis/sass/_normalize.scss */
+button {
+  overflow: visible; }
+
+/* line 198, /Users/mark/repos/colorVis/sass/_normalize.scss */
+button, select {
+  text-transform: none; }
+
+/* line 208, /Users/mark/repos/colorVis/sass/_normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/* line 215, /Users/mark/repos/colorVis/sass/_normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/* line 221, /Users/mark/repos/colorVis/sass/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 228, /Users/mark/repos/colorVis/sass/_normalize.scss */
+input {
+  line-height: normal; }
+
+/* line 238, /Users/mark/repos/colorVis/sass/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 247, /Users/mark/repos/colorVis/sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 253, /Users/mark/repos/colorVis/sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 263, /Users/mark/repos/colorVis/sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 268, /Users/mark/repos/colorVis/sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 276, /Users/mark/repos/colorVis/sass/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 282, /Users/mark/repos/colorVis/sass/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/* line 288, /Users/mark/repos/colorVis/sass/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* line 296, /Users/mark/repos/colorVis/sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 302, /Users/mark/repos/colorVis/sass/_normalize.scss */
+td, th {
+  padding: 0; }
+
+/* line 24, /Users/mark/repos/colorVis/sass/styles.scss */
+*, *::before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 30, /Users/mark/repos/colorVis/sass/styles.scss */
+ul {
+  padding: 0;
+  list-style: none; }
+
+/* line 36, /Users/mark/repos/colorVis/sass/styles.scss */
+html, body {
+  background-color: white;
+  color: #29303d;
+  font-family: sans-serif;
+  line-height: 1.4; }
+
+/* line 48, /Users/mark/repos/colorVis/sass/styles.scss */
+body::-webkit-scrollbar {
+  width: 0;
+  height: 12px; }
+
+/* line 55, /Users/mark/repos/colorVis/sass/styles.scss */
+.logo {
+  width: 5vw;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 2vw; }
+
+/* line 63, /Users/mark/repos/colorVis/sass/styles.scss */
+.options-container {
+  background-color: #2d2d39;
+  height: 8vw;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 9999;
+  padding-left: 1.5vw; }
+
+/* line 74, /Users/mark/repos/colorVis/sass/styles.scss */
+.sort-label {
+  color: #aaaaaf;
+  position: absolute;
+  left: 2.1vw;
+  top: 1.1vw;
+  font-size: 1vw;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300; }
+
+/* line 84, /Users/mark/repos/colorVis/sass/styles.scss */
+.option-btn {
+  appearance: none;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
+  border: 0;
+  color: #41414c;
+  font-weight: 900;
+  outline: 0;
+  font-size: 5vw;
+  line-height: 8.4vw;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; }
+  /* line 97, /Users/mark/repos/colorVis/sass/styles.scss */
+  .option-btn::after {
+    content: ","; }
+  /* line 101, /Users/mark/repos/colorVis/sass/styles.scss */
+  .option-btn:last-child::after {
+    content: ""; }
+  /* line 105, /Users/mark/repos/colorVis/sass/styles.scss */
+  .option-btn:hover {
+    color: #6b6b74; }
+  /* line 109, /Users/mark/repos/colorVis/sass/styles.scss */
+  .option-btn.active {
+    color: white; }
+
+/* line 114, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-list {
+  margin: 8vw 0 0;
+  padding: 0;
+  overflow: hidden; }
+
+/* line 120, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-item {
+  width: 14.28571%;
+  height: 14.28571vw;
+  cursor: pointer;
+  padding: 1vw;
+  -webkit-box-shadow: 0 0 0 rgba(40, 47, 61, 0.8);
+  box-shadow: 0 0 0 rgba(40, 47, 61, 0.8); }
+  /* line 127, /Users/mark/repos/colorVis/sass/styles.scss */
+  .color-item.light {
+    color: #f1f2f4; }
+
+/* line 139, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-info span {
+  display: block;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1; }
+
+/* line 145, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-hex {
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-weight: 700; }
+
+/* line 151, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-name {
+  font-size: 2.2vw;
+  margin-top: 0.5vw;
+  font-weight: 400; }
+
+/* line 162, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-red, .color-blue, .color-green, .color-hue, .color-saturation, .color-lightness {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 0.8vw;
+  font-weight: 700; }
+  /* line 169, /Users/mark/repos/colorVis/sass/styles.scss */
+  .color-red::before, .color-red::after, .color-blue::before, .color-blue::after, .color-green::before, .color-green::after, .color-hue::before, .color-hue::after, .color-saturation::before, .color-saturation::after, .color-lightness::before, .color-lightness::after {
+    font-weight: 300; }
+
+/* line 176, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-red, .color-blue, .color-green {
+  left: 1vw; }
+
+/* line 180, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-red {
+  bottom: 3.2vw; }
+  /* line 183, /Users/mark/repos/colorVis/sass/styles.scss */
+  .color-red::after {
+    content: ": red"; }
+
+/* line 188, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-green {
+  bottom: 2.1vw; }
+  /* line 191, /Users/mark/repos/colorVis/sass/styles.scss */
+  .color-green::after {
+    content: ": green"; }
+
+/* line 196, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-blue {
+  bottom: 1vw; }
+  /* line 199, /Users/mark/repos/colorVis/sass/styles.scss */
+  .color-blue::after {
+    content: ": blue"; }
+
+/* line 206, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-hue, .color-saturation, .color-lightness {
+  right: 1vw; }
+
+/* line 210, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-hue {
+  bottom: 3.2vw; }
+  /* line 213, /Users/mark/repos/colorVis/sass/styles.scss */
+  .color-hue::before {
+    content: "hue: "; }
+
+/* line 218, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-saturation {
+  bottom: 2.1vw; }
+  /* line 221, /Users/mark/repos/colorVis/sass/styles.scss */
+  .color-saturation::before {
+    content: "saturation: "; }
+
+/* line 226, /Users/mark/repos/colorVis/sass/styles.scss */
+.color-lightness {
+  bottom: 1vw; }
+  /* line 229, /Users/mark/repos/colorVis/sass/styles.scss */
+  .color-lightness::before {
+    content: "lightness: "; }
