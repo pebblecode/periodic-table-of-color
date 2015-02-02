@@ -1,6 +1,4 @@
-# Barebones gulp project
-
-Barebones gulp.js project. Gives you local server, liveReload, Sass, & jshint.
+Created as part of the [pebble {code}](http://pebblecode.com/) Jan 2015 Data-Vis Hack day.
 
 ### getting started
 
